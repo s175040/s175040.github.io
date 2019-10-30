@@ -96,7 +96,7 @@ section{
 }
 
 section h2{
-	width: 75%;
+	width: 70%;
 	margin: 0 auto 10px;
 	font-size: 22px;
 	font-weight:normal;
@@ -110,7 +110,10 @@ h2 {
   padding: 0.5em;
   background: #f86f68;
   color: white;
-	left: 5px;
+}
+
+h2 span{
+	margin-left: 25px;
 }
 
 h2::before {
@@ -163,6 +166,10 @@ width:100%;
 margin-bottom: 40px;
 max-width:100%;
 height:auto;
+}
+	
+	h2 span{
+	margin-left: 25px;
 }
 	body{
 		font-size:14px;
@@ -218,6 +225,9 @@ height:auto;
 	font-size: 22px;
 	color: #f86f68
 }
+	h2 span{
+	margin-left: 25px;
+}
 	.col2 li{
 		width: 60%;
 		vertical-align: top;
@@ -246,7 +256,9 @@ height:auto;
   padding: 0.5em;
   background: #f86f68;
   color: white;
-	margin-left: 5px;
+}
+		h2 span{
+	margin-left: 0;
 }
 	.inner{
 		width: 100%;
@@ -434,15 +446,15 @@ height:auto;
 
 
 
-example {/*親div*/
+example {
   position: relative;
   }
 
 .example p {
   position: absolute;
-  color: white;/*文字は白に*/
-  font-weight: bold; /*太字に*/
-  font-size: 2em;/*サイズ2倍*/
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
   top: 0;
   left: 0;
   }
@@ -464,7 +476,6 @@ example {
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
-  /*文字の装飾は省略*/
   }
 
 .example img {
