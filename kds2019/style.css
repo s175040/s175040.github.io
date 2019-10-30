@@ -17,12 +17,13 @@ img,abbr,acronym,fieldset{border:0;}
 
 #header h1{
 	padding-top: 50px;
-	font-size: 15px;
+	font-size: 30px;
 	color: #f86f68
 }
 
 #mainnav a{
 	color: #0B0B0B;
+	text-decoration: none;
 }
 
 .practice-float{
@@ -95,7 +96,7 @@ section{
 }
 
 section h2{
-	width: 57%;
+	width: 75%;
 	margin: 0 auto 10px;
 	font-size: 22px;
 	font-weight:normal;
@@ -109,6 +110,7 @@ h2 {
   padding: 0.5em;
   background: #f86f68;
   color: white;
+	left: 5px;
 }
 
 h2::before {
@@ -128,7 +130,8 @@ h2::before {
 }
 
 .innerS{
-	width: 55%;
+	font-size: 20px;
+	width: 70%;
 	margin: 0 auto;
 	padding-bottom: 80px;
 }
@@ -150,6 +153,17 @@ h2::before {
 }
 
 @media only screen and (min-width: 800px){
+	#mainBanner{
+margin:0 auto;
+padding:20px;
+}
+
+#mainBanner img{
+width:100%;
+margin-bottom: 40px;
+max-width:100%;
+height:auto;
+}
 	body{
 		font-size:14px;
 	}
@@ -188,6 +202,22 @@ h2::before {
 
 
 @media only screen and (min-width: 641px){
+	#mainBanner{
+margin:0 auto;
+padding:20px;
+}
+
+#mainBanner img{
+width:100%;
+margin-bottom: 40px;
+max-width:100%;
+height:auto;
+}
+	#header h1{
+	padding-top: 50px;
+	font-size: 22px;
+	color: #f86f68
+}
 	.col2 li{
 		width: 60%;
 		vertical-align: top;
@@ -199,10 +229,37 @@ h2::before {
 }
 
 @media screen and (max-width: 640px){
+	#mainBanner img{
+	width:100%;
+	margin-top: 30px;
+	margin-bottom: -15px;
+	max-width:100%;
+	height:auto;
+	}
+	#header h1{
+	padding-top: 50px;
+	font-size: 16px;
+	color: #f86f68
+}
+	h2 {
+  position: relative;
+  padding: 0.5em;
+  background: #f86f68;
+  color: white;
+	margin-left: 5px;
+}
 	.inner{
 		width: 100%;
 		padding-bottom: 70px;
 	}
+	.innerS p{
+	font-size: 16px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 80px;
+}
+
 	.col3 li{
 		line-height: 1.7;
 	}
@@ -375,11 +432,6 @@ h2::before {
 	}
 }
 
-.innerS p{
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 80px;
-}
 
 
 example {/*親div*/
