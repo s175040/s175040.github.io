@@ -375,6 +375,13 @@ h2::before {
 	}
 }
 
+.innerS p{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+
 example {/*親div*/
   position: relative;
   }
