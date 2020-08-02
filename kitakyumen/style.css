@@ -473,7 +473,8 @@ html{
 }
 
 .souplanding img{
-	width: 100%
+	width: 100%;
+	border-radius: 5px;
 }
 
 .pricelanding{
@@ -485,7 +486,8 @@ html{
 }
 
 .pricelanding img{
-	width: 100%
+	width: 100%;
+	border-radius: 5px;
 }
 
 .arealanding{
@@ -497,7 +499,8 @@ html{
 }
 
 .arealanding img{
-	width: 100%
+	width: 100%;
+	border-radius: 5px;
 }
 
 .arealanding2{
@@ -510,7 +513,8 @@ html{
 }
 
 .arealanding2 img{
-	width: 100%
+	width: 100%;
+	border-radius: 5px;
 }
 
 .ramenshop h1{
