@@ -398,6 +398,11 @@ footer p{
 	
 @media screen and (max-width: 940px) {
 	
+	.home-content{
+    text-align: center;
+    margin-top: 36%;
+}
+	
 	#kousi1{
 		margin-left: 40px;
 		margin-right: 80px;
@@ -412,17 +417,17 @@ footer p{
 
 	#nittei{
 	margin: 150px 80px;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	}
 
 	#mousikomi{
 	margin: 150px 80px;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	}
 
 	#syusai{
 	margin: 150px 80px;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	}
 }
 
@@ -441,7 +446,7 @@ footer p{
 	#kousi1{
 		width: 70%;
 		margin: 15px auto;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	
 	#kaijou{
@@ -457,25 +462,25 @@ footer p{
 	#kaijou1{
 		width: 70%;
 		margin: 15px auto;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	
 	#nittei{
 		width: 70%;
 		margin: 80px auto;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 
 	#mousikomi{
 		width: 70%;
 		margin: 80px auto;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 
 	#syusai{
 		width: 70%;
 		margin: 80px auto;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	
 	.home-content{
@@ -510,6 +515,43 @@ footer p{
 	
 	.logo{
     width: 250px;
+    margin: 6% 5%;
+}
+}
+
+@media screen and (max-height: 570px) {
+	.home-content{
+    margin-top: 8%;
+}
+	
+	.page-title{
+		font-size: 1.6rem;
+		font-family: 'Philosopher' , serif;
+		text-transform: uppercase;
+		font-weight: normal;
+		position: absolute;
+        right: 20%;
+        writing-mode: vertical-rl;
+	}
+	
+	.button{
+		font-size: 0.825rem;
+		background: #FF595C;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 15px;
+		position: absolute;
+        right: 35%;
+        writing-mode: vertical-rl;
+		margin-top: 40%;
+	}
+
+	.button:hover{
+		background: #DD181B;
+	}
+	
+	.logo{
+    width: 200px;
     margin: 6% 5%;
 }
 }
