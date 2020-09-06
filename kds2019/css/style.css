@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/*-----共通設定-----*/
+
+html {
+	font-size: 100%;
+}
+body{
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+	line-height: 1.7;
+	color: #130000;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+
+/*-----Header-----*/
+	
+.logo{
+    width: 410px;
+    margin: 2% 5%;
+}
+	
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
+/*============
+main
+=============*/
+main {
+  padding: 50px;
+}
+main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*----home----*/
+
+.home-content{
+    text-align: center;
+    margin-top: 14%;
+}
+
+/*---見出し---*/
+
+.page-title{
+	font-size: 3.5rem;
+	font-family: 'Philosopher' , serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+/*---ボタン--*/
+
+.button{
+	font-size: 1.425rem;
+	background: #FF595C;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+.button:hover{
+	background: #DD181B;
+}
+
+/*---背景---*/
+
+.big-bg{
+	background-size: cover;
+	background-position: center 40%;
+	background-repeat: no-repeat;
+}
+
+#home{
+	background-image: url("../images/homeback.png");
+	min-height: 100vh;
+}
+
+/*---main-content--*/
+
+#kousi{
+	margin-top: 5%;
+	display: flex;
+	align-items: flex-end;
+}
+
+#kousi img{
+	width:55%;
+}
+
+#kousi1{
+	margin-left: 40px;
+	margin-right: 80px;
+	font-size: 1rem;
+}
+
+#kousi1 h1 {
+	position: relative;
+	padding: 0.25em 0;
+}
+
+#kousi1 h1:after{
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90),transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90),transparent);
+}
+
+#kaijou{
+	margin-top: 5%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#kaijou img{
+	width:55%;
+}
+
+#kaijou1{
+	margin-left: 80px;
+	margin-right: 40px;
+	font-size: 1rem;
+	width: 45%;
+}
+
+#kaijou1 h1 {
+	position: relative;
+	padding: 0.25em 0;
+}
+
+#kaijou1 h1:after{
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90),transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90),transparent);
+}
+
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#nittei{
+	margin: 150px 80px;
+	font-size: 1rem;
+}
+
+#nittei h1 {
+	position: relative;
+	padding: 0.25em 0;
+}
+
+#nittei h1:after{
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90),transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90),transparent);
+}
+
+#mousikomi{
+	margin: 150px 80px;
+	font-size: 1rem;
+}
+
+#mousikomi h1 {
+	position: relative;
+	padding: 0.25em 0;
+}
+
+#mousikomi h1:after{
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90),transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90),transparent);
+}
+
+#syusai{
+	margin: 150px 80px;
+	font-size: 1rem;
+}
+
+#syusai h1 {
+	position: relative;
+	padding: 0.25em 0;
+}
+
+#syusai h1:after{
+	content: "";
+	display: block;
+	height: 4px;
+	background: -webkit-linear-gradient(to right, rgb(230, 90, 90),transparent);
+	background: linear-gradient(to right, rgb(230, 90, 90),transparent);
+}
+
+footer{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background-color: #f86f68;
+}
+
+footer p{
+    display: inline-block;
+    width: 320px;
+    margin-top: 20px;
+	color: white;
+	font-size: 14px;
+}
+
+/*--レスポンシブ--*/
+
+@media screen and (max-width: 1200px) {
+	
+	.page-title{
+		font-size: 2.5rem;
+		font-family: 'Philosopher' , serif;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+
+	.button{
+		font-size: 1.125rem;
+		background: #FF595C;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 25px;
+	}
+
+	#kousi1{
+		margin-left: 40px;
+		margin-right: 80px;
+		font-size: 0.8rem;
+	}
+
+	#kaijou1{
+		margin-left: 80px;
+		margin-right: 40px;
+		font-size: 0.8rem;
+	}
+
+	#nittei{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+
+	#mousikomi{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+
+	#syusai{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+}
+	
+@media screen and (max-width: 940px) {
+	
+	#kousi1{
+		margin-left: 40px;
+		margin-right: 80px;
+		font-size: 0.6rem;
+	}
+
+	#kaijou1{
+		margin-left: 80px;
+		margin-right: 40px;
+		font-size: 0.6rem;
+	}
+
+	#nittei{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+
+	#mousikomi{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+
+	#syusai{
+	margin: 150px 80px;
+	font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	
+	#kousi{
+		margin-top: 5%;
+		flex-direction:column;
+	}
+
+	#kousi img{
+		width:70%;
+		margin: 0 auto;
+	}
+
+	#kousi1{
+		width: 70%;
+		margin: 15px auto;
+		font-size: 0.8rem;
+	}
+	
+	#kaijou{
+		margin-top: 15%;
+		flex-direction:column-reverse;
+	}
+
+	#kaijou img{
+		width:70%;
+		margin: 0 auto;
+	}
+
+	#kaijou1{
+		width: 70%;
+		margin: 15px auto;
+		font-size: 0.8rem;
+	}
+	
+	#nittei{
+		width: 70%;
+		margin: 80px auto;
+		font-size: 0.8rem;
+	}
+
+	#mousikomi{
+		width: 70%;
+		margin: 80px auto;
+		font-size: 0.8rem;
+	}
+
+	#syusai{
+		width: 70%;
+		margin: 80px auto;
+		font-size: 0.8rem;
+	}
+	
+	.home-content{
+    margin-top: 8%;
+}
+	
+	.page-title{
+		font-size: 2.3rem;
+		font-family: 'Philosopher' , serif;
+		text-transform: uppercase;
+		font-weight: normal;
+		position: absolute;
+        right: 20%;
+        writing-mode: vertical-rl;
+	}
+	
+	.button{
+		font-size: 0.825rem;
+		background: #FF595C;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px 15px;
+		position: absolute;
+        right: 35%;
+        writing-mode: vertical-rl;
+		margin-top: 40%;
+	}
+
+	.button:hover{
+		background: #DD181B;
+	}
+	
+	.logo{
+    width: 250px;
+    margin: 6% 5%;
+}
+}

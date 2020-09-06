@@ -1,64 +1,20 @@
-$(function(){
-	
-	var
-	  winW = $(window).width(),
-		winH = $(window).height(),
-		nav = $('#mainnav ul a'),
-		curPos = $(this).scrollTop();
-	
-	if (winW > 800){
-		var headerH =0;
-	}
-	else{
-		var headerH =70;
-	}
-	
-	$(nav).on('click', function(){
-  	var $el = $(this),
-		id = $el.attr('href');
- 		$('html, body').animate({
-   		scrollTop: $(id).offset().top - headerH
- 		}, 500);
-		if (winW < 890){
-			$('#menuWrap').next().slideToggle();
-			$('#menuBtn').removeClass('close');
-		}
- 		return false;
-	});
-	
-	$('.panel').hide();
-	$('#menuWrap').toggle(function(){
-		$(this).next().slideToggle();
-		$('#menuBtn').toggleClass('close');
-	},
-	function(){
-		$(this).next().slideToggle();
-		$('#menuBtn').removeClass('close');
-	});
-});
-
- jQuery(function(){
-    jQuery(window).scroll(function (){
-        jQuery('.fadein').each(function(){
-            var elemPos = jQuery(this).offset().top;
-            var scroll = jQuery(window).scrollTop();
-            var windowHeight = jQuery(window).height();
-            if (scroll > elemPos - windowHeight + 100){
-                jQuery(this).addClass('scrollin');
-            }
-        });
-    });
+$(document).ready(function(){
+(function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.toggle_btn');
+  var $mask  = $('#mask');
+  var open   = 'open'; // class
+  // menu open close
+  $btn.on( 'click', function() {
+    if ( ! $nav.hasClass( open ) ) {
+      $nav.addClass( open );
+    } else {
+      $nav.removeClass( open );
+    }
   });
-
-
-$('#animation').css('visibility','hidden');
-$(window).scroll(function(){
- var windowHeight = $(window).height(),
-     topWindow = $(window).scrollTop();
- $('#animation').each(function(){
-  var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 100){
-   $(this).addClass("fadeInDown");
-  }
- });
+  // mask close
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+} )(jQuery);
 });

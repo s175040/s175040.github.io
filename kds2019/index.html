@@ -1,98 +1,84 @@
 <!doctype html>
-<html>
-<head lang="ja">
-<meta charset="utf-8">
-<title>北九州デザインシンポジウム2019</title>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Apollo</title>
+	<meta name="Description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
 	
-	<meta name="description" content="デザインの分野で活躍されている方を講師にお招きし、市民の皆さまや市内企業の方々がデザインに関する知識を深め、デザインを活用した商品開発や新しいビジネスの創出のきっかけとなることを目的に、本シンポジウムを開催します。">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<link href="style.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<!--CSS-->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link href="https://fonts.googlepis.com/css?family=Philosopher" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
-<body id="top">
-<div id="wrapper">
-<header id="header">
-	<div id="headerWrap">
-		<nav id="mainnav">
-			<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-			<div class="panel">
-				<ul>
-					<li><a href="#top"><b>TOP</b></a></li>
-					<li><a href="#sec01"><b>講師</b></a></li>
-					<li><a href="#sec02"><b>日程</b></a></li>
-					<li><a href="#sec03"><b>会場</b></a></li>
-					<li><a href="#sec04"><b>申込</b></a></li>
-					<li><a href="#sec05"><b>主催</b></a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</header>
-</section>
-	<div id="mainBanner">
-		<div class="inner">
-	<div class="fadein1">
-  <img src="images/banner1.jpg" />
-		</div>
-		</div>
-	</div>
+<body>
+	<div id="home" class="big-bg">
+		<h1><img class="logo" src="images/logo.png" alt="北九州デザインシンポジウム2019"></h1>
+	<div id="navArea">
 
-<!-- 講師 -->
-<section id="sec01">
-	<header>
-		<h2><span>講師</span></h2>
-	</header>
-	<div class="innerS">
-			<div class="fadein">
-				<div class="fadein2">
-		<img src="images/photo1.jpg" width="1024" height="768" alt="画像" style="float: top">
-				</div>
-			</div>
-		<p><big><big><b>おてらおやつクラブ</b></big></big><br>
-			事務局長/桂浄薫<br>
+  <nav>
+    <div class="inner">
+      <ul>
+        <li><a href="#home">TOP</a></li>
+        <li><a href="#kousi">講師</a></li>
+        <li><a href="#kaijou">会場</a></li>
+		<li><a href="#nittei">日程</a></li>
+		<li><a href="#mousikomi">申し込み</a></li>
+		<li><a href="#syusai">主催</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+	
+	<!--home-content-->
+	
+	<div class="home-content">
+		<h2 class="page-title">今、あるものを結ぶデザインとは</h2>
+		<a class="button" href="#kousi">講師：おてらおやつクラブ</a>
+	</div>
+	</div>
+		<!--main-content-->
+	
+	<div id="kousi">
+		<img src="images/photo1.jpg" alt="おてらおやつクラブ">
+	<div id="kousi1">
+		<h1>講師</h1>
+		<h2>おてらおやつクラブ</h2>
+			<p>事務局長/桂浄薫<br>
 			マーケティング・寄付担当/福井良應
 			<br>
 			<br>「おてらおやつクラブ」は、お寺にお供えされるさまざまな「おそなえ」を、仏さまからの「おさがり」として頂戴し、全国のお寺と支援団体、そして檀信徒および地域住民の協力の下、経済的に困難な状況にあるご家庭へ「おすそわけ」することで、貧困問題の解決を目指す活動を行っています。<br>
 			北九州デザインシンポジウム2019では2018年度グッドデザイン賞・大賞を受賞した、「おてらおやつクラブ」を講師にお招きして、”既存の組織・人・もの・習慣をつなぎ直すだけで機能する「仕組み」の美しさ”について講演いただきます。</p>
 	</div>
-</section>
-<!-- // 講師 -->
-	
-<!-- 日程 -->
-<section id="sec02">
-	<header>
-		<h2><span>日程</span></h2>
-	</header>
-	<div class="innerS">
-		<p>令和元年11月29日（金） 18:30～20:00 （交流会　20:30～）</p>
 	</div>
-</section>
-<!-- // 日程 -->
 	
-<!-- 会場 -->
-<section id="sec03">
-	<header>
-		<h2><span>会場</span></h2>
-	</header>
-	<div class="innerS">
-		<p><big><b>西日本工業大学 小倉キャンパス 303講義室</b></big><br>
-		リバーウォーク大学棟内（北九州市小倉北区室町 1-2-11）</p>
+	<div id="kaijou">
+	<div id="kaijou1">
+		<h1>会場</h1>
+		<h2>西日本工業大学 小倉キャンパス 303講義室</h2>
+		<p>リバーウォーク大学棟内（北九州市小倉北区室町 1-2-11）</p>
 			<div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.114594042953!2d130.87149431534445!3d33.88670243388269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543b8b216839707%3A0x5cd25420ca125814!2z6KW_5pel5pys5bel5qWt5aSn5a2mIOWwj-WAieOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1573486634149!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 	</div>
-
-</section>
-<!-- // 会場 -->
+		<img src="images/photo2.jpeg" alt="西日本工業大学">
+	</div>
 	
-<!-- 参加申し込み -->
-<section id="sec04">
-	<header>
-		<h2><span>参加申し込み</span></h2>
-	</header>
-	<div class="innerS">
+	<div id="nittei">
+		<h1>日程</h1>
+		<p>令和元年11月29日（金） 18:30～20:00 （交流会　20:30～）</p>
+	</div>
+	
+	<div id="mousikomi">
+		<h1>申し込み</h1>
 		<p>［申込方法］事前申込制・先着順（定員に達し次第受付終了）<br>
 			<br clear="right">お申し込みは下記のリンクより電子申請にてお申し込みください。<br>
 			<a href="https://www.shinsei.elg-front.jp/kitakyushu/uketsuke/form.do?id=1568790002384" target="_blank">パソコンからのお申込みフォーム（外部リンク）</a>
@@ -103,22 +89,15 @@
 			北九州市小倉北区場内 1番 1号 本庁舎7階 TEL:093-582-2050
 		</p>
 	</div>
-</section>
-<!-- // 参加申し込み -->
 	
-<!-- 主催 -->
-<section id="sec05">
-	<header>
-		<h2><span>主催</span></h2>
-	</header>
-	<div class="innerS">
+	<div id="syusai">
+		<h1>主催</h1>
 		<p>北九州市、西日本工業大学</p>
 	</div>
-</section>
 	
-<footer id="footer">
+	<footer id="footer">
 	<p>©&nbsp;2016-2020&nbsp;おてらおやつクラブ</p>	
 </footer>
-</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
