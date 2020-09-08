@@ -20,7 +20,7 @@ img{
 /*-----Header-----*/
 	
 .logo{
-    width: 410px;
+    width: 500px;
     margin: 2% 5%;
 }
 	
@@ -201,7 +201,7 @@ main h1 {
 /*---main-content--*/
 
 #kousi{
-	padding-top: 5%;
+	margin-top: 5%;
 	display: flex;
 	align-items: flex-end;
 }
@@ -354,6 +354,11 @@ footer p{
 
 @media screen and (max-width: 1200px) {
 	
+	.logo{
+    width: 420px;
+    margin: 2% 5%;
+}
+	
 	.page-title{
 		font-size: 2.5rem;
 		font-family: 'Philosopher' , serif;
@@ -448,7 +453,7 @@ footer p{
 @media screen and (max-width: 415px) {
 	
 	#kousi{
-		padding-top: 5%;
+		margin-top: -15%;
 		flex-direction:column;
 	}
 
@@ -528,6 +533,14 @@ footer p{
 	.logo{
     width: 250px;
     margin: 6% 5%;
+	}
+	
+	footer p{
+    display: inline-block;
+    width: 320px;
+    margin-top: 20px;
+	color: white;
+	font-size: 10px;
 }
 }
 
