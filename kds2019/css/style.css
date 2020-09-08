@@ -96,7 +96,7 @@ nav .inner ul li a:hover {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #5C0001;
   border-radius: 4px;
   transition: all .5s;
 }
@@ -432,6 +432,19 @@ footer p{
 	}
 }
 
+@media screen and (max-width: 770px) {
+	.big-bg{
+	background-size: cover;
+	background-position: 21%;
+	background-repeat: no-repeat;
+}
+
+#home{
+	background-image: url("../images/homeback.jpg");
+	min-height: 100vh;
+}
+}
+
 @media screen and (max-width: 415px) {
 	
 	#kousi{
@@ -505,7 +518,7 @@ footer p{
 		position: absolute;
         right: 45%;
         writing-mode: vertical-rl;
-		margin-top: 50%;
+		margin-top: 24%;
 	}
 
 	.button:hover{
